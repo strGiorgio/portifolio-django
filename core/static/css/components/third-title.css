@@ -1,0 +1,9 @@
+.third-title {
+    font: 22px "Merriweather Sans", sans-serif;
+    color: #fff;
+}
+
+.third-title._knowledge {
+    font-weight: bold;
+    color: #7D5CF2;
+}

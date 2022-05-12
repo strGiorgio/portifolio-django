@@ -1,0 +1,10 @@
+.knowledge-items {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0px 30px 50px;
+}
+
+.knowledge-items .third-title._knowledge {
+    margin-bottom: 10px; 
+}

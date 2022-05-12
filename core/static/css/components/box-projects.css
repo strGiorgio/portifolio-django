@@ -1,0 +1,58 @@
+.box-projects {
+    background-color: #7555EE;
+    height: 90vh;
+    align-self: center;
+    border-radius: 2%;
+    position: relative;
+
+}
+
+.box-projects._secondP {
+    background-color: #06395c;
+}
+
+.box-projects._thirdP {
+    background-color: #026697;
+}
+
+.box-projects .second-title._projects._project1, .second-title._projects._project2 {
+    text-align: center;
+    color: #000;
+    opacity: 30%;
+    margin-top: 10px;
+}
+
+.box-projects .main-text._project1 {
+    margin-top: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.box-projects .main-text._project2 {
+    color: #000;
+    font-size: 25px;
+    margin: 0 0 30px 50px;
+    width: 700px;
+}
+
+.box-projects .main-image._project1 {
+    margin: 30px 50px;
+}
+
+.box-projects .main-image._project2 {
+    margin: 30px 50px;
+    width: 600px;
+    height: 300px;
+}
+
+.box-projects .main-image._project1:last-child {
+    margin: 0;
+    height: 200px;
+    position: absolute;
+    right: 35px;
+}
+
+.box-projects .wrapper-img-text{
+    display: flex;
+}

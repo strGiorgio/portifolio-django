@@ -1,0 +1,11 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D0D0D;
+    height: 80px;
+}
+
+.main-footer .main-text {
+    margin-right: 20px;
+}

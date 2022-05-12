@@ -1,0 +1,56 @@
+.main-section{
+    background-color: #7D5CF2;
+    min-height: 200px;
+    border-bottom: 5px solid #000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main-section._banner{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section._banner .main-logo {
+    right: 15px;
+    top: 10px;
+    z-index: 0;
+}
+
+.main-section._about {
+    display: flex;
+    flex-direction: column;
+    background: url(../../assets/images/SectionABOUT.png);
+    background-size: cover;
+    height: 792px;
+    border-color: #595959;
+}
+
+.main-section._knowledge {
+    background-color: #0D0D0D;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.main-section._contacts {
+    display: flex;
+    background: url("https://i.imgur.com/nLNGlvi.png");
+    background-size: cover;
+    flex-direction: row;
+    border: none;
+    padding: 60px 50px 60px 20px;
+    justify-content: space-between;
+    transition: 600ms ease-in-out;
+}
+
+.main-section._projects {
+    display: flex;
+    height: 700px;
+    transition: 2000ms;
+    box-sizing: content-box;
+    background-color: #06395C;
+    overflow: hidden;
+}

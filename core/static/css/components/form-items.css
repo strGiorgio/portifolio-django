@@ -1,0 +1,11 @@
+.form-items {
+    margin-bottom: 18px;
+}
+
+.form-items .main-label {
+    margin-left: 25px;
+}
+
+.form-items .main-input._msg {
+    margin-bottom: 38px;
+}
