@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;800&family=Raleway:wght@400;800&display=swap" rel="stylesheet">
 
-    <title>StrGiorgio Portfólio</title>
+    <title>{{ title }} Portfólio</title>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -19,47 +20,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="css/components/change-idiom.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/components/main-header.css">
-    <link rel="stylesheet" href="css/components/second-logo.css">
-    <link rel="stylesheet" href="css/components/main-action.css">
-    <link rel="stylesheet" href="css/components/main-menu.css">
-    <link rel="stylesheet" href="css/components/main-section.css">
-    <link rel="stylesheet" href="css/components/wrapper-title.css">
-    <link rel="stylesheet" href="css/components/main-title.css">
-    <link rel="stylesheet" href="css/components/main-logo.css">
-    <link rel="stylesheet" href="css/components/main-text.css">
-    <link rel="stylesheet" href="css/components/second-arrow.css">
-    <link rel="stylesheet" href="css/components/second-title.css">
-    <link rel="stylesheet" href="css/components/wrapper-text.css">
-    <link rel="stylesheet" href="css/components/wrapper-knowledge.css">
-    <link rel="stylesheet" href="css/components/knowledge-items.css">
-    <link rel="stylesheet" href="css/components/wrapper-skills.css">
-    <link rel="stylesheet" href="css/components/skills-items.css">
-    <link rel="stylesheet" href="css/components/third-title.css">
-    <link rel="stylesheet" href="css/components/main-progress.css">
-    <link rel="stylesheet" href="css/components/wrapper-contacts.css">
-    <link rel="stylesheet" href="css/components/main-form.css">
-    <link rel="stylesheet" href="css/components/wrapper-form.css">
-    <link rel="stylesheet" href="css/components/form-items.css">
-    <link rel="stylesheet" href="css/components/main-input.css">
-    <link rel="stylesheet" href="css/components/main-label.css">
-    <link rel="stylesheet" href="css/components/main-button.css">
-    <link rel="stylesheet" href="css/components/projects-styles.css">
-    <link rel="stylesheet" href="css/components/wrapper-arrow.css">
-    <link rel="stylesheet" href="css/components/main-arrow.css">
-    <link rel="stylesheet" href="css/components/main-image.css">
-    <link rel="stylesheet" href="css/components/sociais-toggle.css">
-    <link rel="stylesheet" href="css/components/main-icons.css">
-    <link rel="stylesheet" href="css/components/main-footer.css">
-    <link rel="stylesheet" href="css/components/sociais-scroll.css">
-    <link rel="stylesheet" href="css/components/animation-scroll.css">
+    <link rel="stylesheet" href="{% static 'css/components/change-idiom.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/second-logo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-action.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-section.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-logo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-text.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/second-arrow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/second-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-text.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-knowledge.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/knowledge-items.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-skills.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/skills-items.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/third-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-progress.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-contacts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/form-items.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-input.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-label.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/projects-styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-arrow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-arrow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-image.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/sociais-toggle.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/sociais-scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/animation-scroll.css' %}">
 </head>
-
-    
 
 <body>
     <div class="change-idiom">
