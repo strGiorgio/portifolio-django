@@ -1,0 +1,12 @@
+.wrapper-contacts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1920px;
+    justify-self: left;
+}
+
+.wrapper-contacts:last-of-type(1) {
+    margin-right: 300px;
+}

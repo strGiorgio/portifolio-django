@@ -1,0 +1,12 @@
+.wrapper-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper-skills .skills-items {
+    margin-bottom: 15px;
+}
+
+.wrapper-skills .skills-items:nth-child(odd) {
+    margin-right: 50px ;
+}

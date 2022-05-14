@@ -1,0 +1,24 @@
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0D0D0D;
+    height: 80px;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-footer .main-text {
+    margin-right: 20px;
+}
+
+.main-footer .sociais-alt {
+    display: none;
+    font: 1.9rem "Raleway", sans-serif;
+    text-shadow: 1px 1px 3px #000;
+    color: #fff;
+    background-color: #7D5CF2;
+    padding: 10px 30px;
+    border-radius: 30px;
+}

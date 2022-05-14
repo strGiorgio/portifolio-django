@@ -1,0 +1,20 @@
+.main-logo {
+    width: 380px;
+    height: 410px;
+    position: absolute;
+    animation: animaGif 5s infinite;
+}
+
+@keyframes animaGif {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
+    }
+}

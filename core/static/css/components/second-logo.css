@@ -1,0 +1,20 @@
+.second-logo {
+    height: 60px;
+    width: 60px;
+    margin: 8px 10px;
+    border-radius: 50%;
+    animation: animaSpin 7s infinite;
+}
+
+@keyframes animaSpin {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}

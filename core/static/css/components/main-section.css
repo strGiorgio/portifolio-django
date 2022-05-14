@@ -1,0 +1,68 @@
+.main-section{
+    background-color: #7D5CF2;
+    min-height: 200px;
+    border-bottom: 5px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.main-section._banner{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.main-section._banner .main-logo {
+    right: 15px;
+    top: 10px;
+    z-index: 0;
+}
+
+.main-section._about {
+    display: flex;
+    flex-direction: column;
+    background: url(../../assets/images/SectionABOUT.png);
+    background-size: cover;
+    padding: 12% 0;
+    border-color: #595959;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.main-section._knowledge {
+    background-color: #0D0D0D;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.main-section._projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    transition: 2000ms;
+    box-sizing: content-box;
+    background-color: #0C141D;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.main-section._contacts {
+    display: flex;
+    justify-content: center;
+    background: url("https://i.imgur.com/nLNGlvi.png");
+    background-size: cover;
+    border: none;
+    padding: 60px 0;
+    transition: 600ms ease-in-out;
+    max-width: 1920px;
+    margin: 0 auto;
+}

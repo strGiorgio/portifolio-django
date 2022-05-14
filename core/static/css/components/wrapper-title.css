@@ -1,0 +1,15 @@
+.wrapper-title {
+    z-index: 1;
+}
+
+.wrapper-title .image-title {
+    width: 86rem;
+    transform: translateX(500px);
+    animation: slide 2s forwards;
+}
+
+@keyframes slide {
+    to {
+        transform: translateX(0);
+    }
+}

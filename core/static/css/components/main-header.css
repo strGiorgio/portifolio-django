@@ -1,0 +1,35 @@
+.main-header {
+    display: flex;
+    background-color: #0D0D0D;
+    position: sticky;
+    top: -15px;
+    z-index: 3;
+    justify-self: center;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.main-header .wrapper-nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header nav:nth-of-type(1) {
+    margin: auto;
+}
+
+.main-header.toggle-menu {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-header.toggle-menu nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header.toggle-menu nav a {
+    margin-bottom: 40px;
+}

@@ -1,0 +1,22 @@
+.main-input {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 21px;
+    width: 40.8rem;
+    height: 4.3rem;
+    font: 2.0rem "Raleway", sans-serif;
+    padding: 0px 15px;
+    
+}
+
+.main-input._msg {
+    border-radius: 3rem;
+    height: 30.2rem;
+    resize: none;
+}
+
+.main-input:focus {
+    background-color: #dfd8f7;
+}

@@ -1,0 +1,35 @@
+.animation-on {
+    animation: animationScroll 5s forwards;
+}
+
+.animation-opacity {
+    animation: opacity 10s forwards;
+}
+
+@keyframes opacity {
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes animationScroll {
+    to {
+        transform: translate(0);
+    }
+}
+
+.loading-element {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #7D5CF2;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+   animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
+    }
+}

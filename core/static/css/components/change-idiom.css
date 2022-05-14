@@ -1,0 +1,22 @@
+.change-idiom {
+    background: #7D5CF2;
+    width: 70px;
+    height: 30px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    padding: 5px;
+    border-radius: 30px 0 30px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.change-idiom .icons-standart {
+    width: 30px;
+    height: 30px;
+}
+
+.change-idiom .icons-standart:hover {
+    transform: scale(1.04);
+}
