@@ -1,3 +1,4 @@
+{% load static   %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,42 +14,42 @@
 
     <title>StrGiorgio Portfólio</title>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/components/main-header.css">
-    <link rel="stylesheet" href="css/components/second-logo.css">
-    <link rel="stylesheet" href="css/components/main-action.css">
-    <link rel="stylesheet" href="css/components/main-section.css">
-    <link rel="stylesheet" href="css/components/wrapper-title.css">
-    <link rel="stylesheet" href="css/components/main-title.css">
-    <link rel="stylesheet" href="css/components/main-logo.css">
-    <link rel="stylesheet" href="css/components/main-text.css">
-    <link rel="stylesheet" href="css/components/second-arrow.css">
-    <link rel="stylesheet" href="css/components/second-title.css">
-    <link rel="stylesheet" href="css/components/wrapper-text.css">
-    <link rel="stylesheet" href="css/components/wrapper-knowledge.css">
-    <link rel="stylesheet" href="css/components/knowledge-items.css">
-    <link rel="stylesheet" href="css/components/wrapper-skills.css">
-    <link rel="stylesheet" href="css/components/skills-items.css">
-    <link rel="stylesheet" href="css/components/third-title.css">
-    <link rel="stylesheet" href="css/components/main-progress.css">
-    <link rel="stylesheet" href="css/components/main-form.css">
-    <link rel="stylesheet" href="css/components/wrapper-form.css">
-    <link rel="stylesheet" href="css/components/form-items.css">
-    <link rel="stylesheet" href="css/components/main-input.css">
-    <link rel="stylesheet" href="css/components/main-label.css">
-    <link rel="stylesheet" href="css/components/main-button.css">
-    <link rel="stylesheet" href="css/components/main-icons.css">
-    <link rel="stylesheet" href="css/components/main-footer.css">
-    <link rel="stylesheet" href="css/components/sociais-scroll.css">
-    <link rel="stylesheet" href="css/components/wrapper-projects.css">
-    <link rel="stylesheet" href="css/components/box-projects.css">
-    <link rel="stylesheet" href="css/components/wrapper-arrow.css">
-    <link rel="stylesheet" href="css/components/main-arrow.css">
-    <link rel="stylesheet" href="css/components/main-image.css">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/second-logo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-action.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-section.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-logo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-text.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/second-arrow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/second-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-text.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-knowledge.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/knowledge-items.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-skills.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/skills-items.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/third-title.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-progress.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-form.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/form-items.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-input.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-label.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/sociais-scroll.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-projects.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/box-projects.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/wrapper-arrow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-arrow.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/main-image.css' %}">
 </head>
 <body>
     <header class="main-header">
-        <img class="second-logo" src="assets/images/logoPurple.png" alt="Logo StrGiorgio">
+        <img class="second-logo" src="{% static 'img/logoPurple.png' %}" alt="Logo StrGiorgio">
         <nav class="main-nav">
             <a class="main-action" href="#banner" lang="en">HOME</a>
             <a class="main-action" href="#about" lang="en">ABOUT ME</a>
@@ -60,11 +61,11 @@
     <!--Section Banner-->
     <section id="banner" class="main-section _banner">
         <div class="wrapper-title">
-            <img src="assets/images/StrGIORGIO.png" alt="logomarca strGiorgio">
+            <img src="{% static 'img/StrGIORGIO.png' %}" alt="logomarca strGiorgio">
             <h1 class="main-title _degrade">StrGIORGIO</h1>
-            <img src="assets/images/StrGIORGIO.png" alt="logomarca strGiorgio">
+            <img src="{% static 'img/StrGIORGIO.png' %}" alt="logomarca strGiorgio">
         </div>
-        <img class="main-logo" src="assets/images/logoSemFundo.png" alt="Logo StrGiorgio">
+        <img class="main-logo" src="{% static 'img/logoSemFundo.png' %}" alt="Logo StrGiorgio">
         
         <p class="main-text _text-menu" lang="en">Learn more about what I do</p>
         <a href="#about"><span class="second-arrow"></span></a>
@@ -220,7 +221,7 @@
         <p class="main-text _third">strGiorgio &copy; {% now 'Y' %}</p>
     </footer>
 
-    <script src="scripts/components/main-projects-script.js"></script>
-    <script src="scripts/components/animation-form.js"></script>
+    <script src="{% static 'js/components/main-projects-script.js' %}"></script>
+    <script src="{% static 'js/components/animation-form.js' %}"></script>
 </body>
 </html>
