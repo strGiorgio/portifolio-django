@@ -62,8 +62,8 @@
 
 <body>
     <div class="change-idiom">
-        <a href="#"><img src="assets/icons/brazil_flags_flag_16979.png" class="icons-standart" alt="Bandeira do Brasil"></a>
-        <a href="pageEN.html"><img src="assets/icons/united_states_flags_flag_17080.png" class="icons-standart" alt="Bandeira dos Estados Unidos"></a>
+        <a href="#"><img src="{% static 'img/icons/brazil_flags_flag_16979.png' %}" class="icons-standart" alt="Bandeira do Brasil"></a>
+        <a href="pageEN.html"><img src="{% static 'img/icons/united_states_flags_flag_17080.png' %}" class="icons-standart" alt="Bandeira dos Estados Unidos"></a>
     </div>
     
     <header class="main-header">
@@ -74,7 +74,7 @@
         </div>
        
         <div class="wrapper-nav">
-            <img class="second-logo" src="assets/images/logoPurple.png" alt="Logo StrGiorgio">
+            <img class="second-logo" src="{% static 'img/images/logoPurple.png' %}" alt="Logo StrGiorgio">
             <nav class="main-nav">
                 <a class="main-action" href="#banner" lang="en" onclick="closeMenu()">COMEÇO</a>
                 <a class="main-action" href="#about" lang="en" onclick="closeMenu()">SOBRE</a>
@@ -87,11 +87,11 @@
     <!--Section Banner-->
     <section id="banner" class="main-section _banner">
         <div class="wrapper-title">
-            <img class="image-title" src="assets/images/StrGIORGIO.png" alt="logomarca strGiorgio">
+            <img class="image-title" src="{% static 'img/images/StrGIORGIO.png' %}" alt="logomarca strGiorgio">
             <h1 class="main-title _degrade">StrGIORGIO</h1>
-            <img class="image-title" src="assets/images/StrGIORGIO.png" alt="logomarca strGiorgio">
+            <img class="image-title" src="{% static 'img/images/StrGIORGIO.png' %}" alt="logomarca strGiorgio">
         </div>
-        <img class="main-logo" src="assets/images/logoSemFundo.png" alt="Logo StrGiorgio">
+        <img class="main-logo" src="{% static 'img/images/logoSemFundo.png' %}" alt="Logo StrGiorgio">
         
         <p class="main-text _text-menu" lang="en">Saiba mais sobre oque eu faço</p>
         <a href="#about"><span class="second-arrow"></span></a>
@@ -232,7 +232,7 @@
                     </svg>
                 </a>
             </div>
-            <img class="image-project" src="assets/imgsProjects/projectGitHub.png" alt="">
+            <img class="image-project" src="{% static 'img/imgsProjects/projectGitHub.png' %}" alt="">
         </div>
 
         <div class="project-two">
@@ -250,7 +250,7 @@
                     </svg>
                 </a>
             </div>
-            <img class="image-project" src="assets/imgsProjects/projetoDoe.png" alt="">
+            <img class="image-project" src="{% static 'img/imgsProjects/projetoDoe.png' %}" alt="">
         </div>
 
         <div class="project-three">
@@ -266,7 +266,7 @@
             <div class="alt-desc">
                 <p>O projeto foi feito na inteção de aprender e praticar algumas linguagens de programação</p>
             </div>
-            <img class="image-project" src="assets/imgsProjects/projetoPymob.png" alt="">
+            <img class="image-project" src="{% static 'img/imgsProjects/projetoPymob.png' %}" alt="">
         </div>
     </section>
 
@@ -296,15 +296,26 @@
 
     <section class="sociais-toggle">
         <div class="wrapper-sociais">
-            <a href="https://twitter.com/UselessAle" target="_blank" rel="external"><img class="main-icons" src="assets/icons/twitter.png" alt="Logo com link para Twitter"></a>
+            <a href="https://twitter.com/UselessAle" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/twitter.png' %}" alt="Logo com link para Twitter">
+            </a>
 
-            <a href="https://github.com/strGiorgio" target="_blank" rel="external"><img class="main-icons" src="assets/icons/github.png" alt="logo com link para github"></a>
+            <a href="https://github.com/strGiorgio" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/github.png' %}" alt="logo com link para github">
+            </a>
 
-            <a href=""><img class="main-icons" src="assets/icons/youtube.png" alt="logo com link para youtube"></a>
+            <a href="">
+                <img class="main-icons" src="{% static 'img/icons/youtube.png' %}" alt="logo com link para youtube">
+            </a>
 
-            <a href="https://www.instagram.com/aleeefe/" target="_blank" rel="external"><img class="main-icons" src="assets/icons/instagram.png" alt="logo com link para instagram"></a>
+            <a href="https://www.instagram.com/aleeefe/" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/instagram.png' %}" alt="logo com link para instagram">
+            </a>
 
-            <a href="https://discord.gg/66wzSfrY" target="_blank" rel="external"><img class="main-icons" src="assets/icons/discord.png" alt="logo com link para discord"></a>
+            <a href="https://discord.gg/66wzSfrY" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/discord.png' %}" alt="logo com link para discord">
+            </a>
+
         </div>
         <span class="second-arrow" onclick="menuClose()"></span>
     </section>
@@ -312,15 +323,25 @@
     <footer class="main-footer">
         <div class="sociais-scroll">
             <div class="wrapper-sociais">
-                <a href="https://twitter.com/UselessAle" target="_blank" rel="external"><img class="main-icons" src="assets/icons/twitter.png" alt="Logo com link para Twitter"></a>
+                <a href="https://twitter.com/UselessAle" target="_blank" rel="external">
+                    <img class="main-icons" src="{% static 'img/icons/twitter.png' %}" alt="Logo com link para Twitter">
+                </a>
 
-                <a href="https://github.com/strGiorgio" target="_blank" rel="external"><img class="main-icons" src="assets/icons/github.png" alt="logo com link para github"></a>
+                <a href="https://github.com/strGiorgio" target="_blank" rel="external">
+                    <img class="main-icons" src="{% static 'img/icons/github.png' %}" alt="logo com link para github">
+                </a>
 
-                <a href=""><img class="main-icons" src="assets/icons/youtube.png" alt="logo com link para youtube"></a>
+                <a href="">
+                    <img class="main-icons" src="{% static 'img/icons/youtube.png' %}" alt="logo com link para youtube">
+                </a>
 
-                <a href="https://www.instagram.com/aleeefe/" target="_blank" rel="external"><img class="main-icons" src="assets/icons/instagram.png" alt="logo com link para instagram"></a>
+                <a href="https://www.instagram.com/aleeefe/" target="_blank" rel="external">
+                    <img class="main-icons" src="{% static 'img/icons/instagram.png' %}" alt="logo com link para instagram">
+                </a>
 
-                <a href="https://discord.gg/66wzSfrY" target="_blank" rel="external"><img class="main-icons" src="assets/icons/discord.png" alt="logo com link para discord"></a>
+                <a href="https://discord.gg/66wzSfrY" target="_blank" rel="external">
+                    <img class="main-icons" src="{% static 'img/icons/discord.png' %}" alt="logo com link para discord">
+                </a>
             </div>
         </div>
 
