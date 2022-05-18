@@ -10,7 +10,10 @@ class Base(models.Model):
 
 #About Me
 class AboutMeModel(Base):
-    desc = models.CharField('Description', max_length=255)
+    desc = models.CharField('Description', max_length=525)
+
+    def __str__(self):
+        return 'My Description'
 #Knowledge
 
 #Idioms
