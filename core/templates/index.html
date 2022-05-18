@@ -101,10 +101,9 @@
         <h2 class="second-title _about-title" lang="en">SOBRE</h2>
         <div class="wrapper-text">
             <p class="main-text _first" lang="en">Ei,<br>Eu sou StrGiorgio,<br>FullStack Developer,</p>
-            <p class="main-text _about-text">Tenho 19 anos de idade e programo/estudo a 1 ano 
-            mas já tive alguns "encontros" com linguagens de programação muito antes. 
-            Atualmente estudante, focando atuar na área de Desenvolvimento Web,
-            aprendendo tecnologias como: HTML5, CSS3, JavaScript, Python, ente outros...</p>
+            {% for t in AboutMeModel %}
+                <p class="main-text _about-text">{{ t.desc}}</p>
+            {% endfor %}
         </div>
     </section>
     <!--Section knowledge-->
