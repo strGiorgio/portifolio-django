@@ -6,6 +6,9 @@ class Base(models.Model):
     created = models.DateField('Created', auto_now_add=True)
     modified = models.DateField('Modified', auto_now=True)
     active = models.BooleanField('Active?', default=True)
+
+    class Meta:
+        abstract = True
     
 
 #About Me
@@ -17,5 +20,13 @@ class AboutMeModel(Base):
 #Knowledge
 
 #Idioms
+class IdiomsModel(Base):
+    level_choices = (
+        ('Advanced', 'Advanced'),
+        ('Intermediary', 'Intermediary'),
+        ('Basic', 'Basic')
+    )
+    lang = models.CharField('Language', max_length=64)
+    level = models.CharField('Level', max_length=64, choices=level_choices)
 
 #My Skills
