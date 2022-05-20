@@ -29,6 +29,9 @@ class IdiomsModel(Base):
     lang = models.CharField('Language', max_length=64)
     level = models.CharField('Level', max_length=64, choices=level_choices)
 
+    def __str__(self):
+        return f'{self.lang}'
+
 #My Skills
 class SkillsModel(Base):
     percentage_choices = (
@@ -38,3 +41,6 @@ class SkillsModel(Base):
     )
     skill = models.CharField('Skill', max_length=64)
     percentage = models.CharField('Percentage', max_length=10, choices=percentage_choices)
+
+    def __str__(self):
+        return f'{self.skill}'
