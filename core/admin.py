@@ -8,5 +8,5 @@ from .models import AboutMeModel, IdiomsModel
 class AboutMeAdmin(admin.ModelAdmin):
     list_display = ('created', 'modified', 'active')
 
-class IdiomsModel(admin.ModelAdmin):
+class IdiomsModelAdmin(admin.ModelAdmin):
     list_display = ('lang', 'level', 'created', 'modified')
