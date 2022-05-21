@@ -168,8 +168,9 @@
             <article class="knowledge-items">
                 <h3 class="third-title _knowledge">Idiomas</h3>
                 <ul class="main-text _second">
-                    <li class="main-text _second">Nativo em Português-BR.</li>
-                    <li class="main-text _second">Inglês intermediário.</li>
+                    {% for l in IdiomsModel %}
+                        <li class="main-text _second">{{ l.lang }} - {{ l.level }}</li>
+                    {% endfor %}
                 </ul>
             </article>
         </div>
