@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import AboutMeModel, IdiomsModel, SkillsModel
+from .models import AboutMeModel, KnowledgesModel, IdiomsModel, SkillsModel
 
 # Register your models here.
 @admin.register(AboutMeModel)
@@ -13,3 +13,7 @@ class IdiomsModelAdmin(admin.ModelAdmin):
 @admin.register(SkillsModel)
 class SkillsModelAdmin(admin.ModelAdmin):
     list_display = ('skill', 'percentage', 'created', 'modified', 'active')
+
+@admin.register(KnowledgesModel)
+class KnowledgesModelAdmin(admin.ModelAdmin):
+    list_display = ('title', 'created', 'modified', 'active')
