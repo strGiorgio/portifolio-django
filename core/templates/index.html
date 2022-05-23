@@ -177,38 +177,13 @@
 
         <h2 class="second-title _skills">HABILIDADES</h2>
         <div class="wrapper-skills">
-            <article class="skills-items">
-                <label class="third-title">HTML / CSS</label> 
-                <progress class="main-progress html" max="100" value="80">80</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">JavaScript</label> 
-                <progress class="main-progress" max="100" value="50">50</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">Python</label> 
-                <progress class="main-progress" max="100" value="80">80</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">GIT / GitHub</label> 
-                <progress class="main-progress" max="100" value="60">60</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">SQL (MySQL)</label> 
-                <progress class="main-progress" max="100" value="70">70</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">Node</label> 
-                <progress class="main-progress" max="100" value="40">40</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">VUE.js</label> 
-                <progress class="main-progress" max="100" value="60">60</progress>
-            </article>
-            <article class="skills-items">
-                <label class="third-title">Django</label> 
-                <progress class="main-progress" max="100" value="30">30</progress>
-            </article>
+            {% for s in SkillsModel %}
+                <article class="skills-items">
+                    <label class="third-title">{{ s.skill }}</label> 
+                    <progress class="main-progress html" max="100" value="{{ s.percentage }}">{{ s.percentage }}</progress>
+                </article>
+            {% endfor %}
+            
             <!--CASO ADICIONE OUTRA HABILIDADE MUDAR VALOR NO SCRIPT-->
         </div>  
     </section>
