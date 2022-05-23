@@ -1,3 +1,4 @@
+from email import charset
 from pyexpat import model
 from django.db import models
 
@@ -17,7 +18,16 @@ class AboutMeModel(Base):
 
     def __str__(self):
         return 'My Description'
+
+
 #Knowledge
+class KnowledgesModel(Base):
+    title = models.CharField("Title", max_length=64)
+    desc = models.CharField("Description", max_length=525)
+
+    def __str__(self):
+        return f'{self.title}'
+
 
 #Idioms
 class IdiomsModel(Base):
@@ -31,6 +41,7 @@ class IdiomsModel(Base):
 
     def __str__(self):
         return f'{self.lang}'
+
 
 #My Skills
 class SkillsModel(Base):
