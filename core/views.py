@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.urls import reverse_lazy
 
-from .models import AboutMeModel, IdiomsModel, SkillsModel
+from .models import AboutMeModel, IdiomsModel, KnowledgesModel, SkillsModel
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -15,4 +15,5 @@ class IndexView(TemplateView):
         context['AboutMeModel'] = AboutMeModel.objects.all()
         context['IdiomsModel'] = IdiomsModel.objects.all()
         context['SkillsModel'] = SkillsModel.objects.all()
+        context['KnowledgesModel'] = KnowledgesModel.objects.all()
         return context
