@@ -110,61 +110,14 @@
     <section id="knowledge" class="main-section _knowledge">
         <h2 class="second-title _knowledge-title" lang="en">CONHECIMENTO</h2>
         <div class="wrapper-knowledge">
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">HTML / CSS</h3>
-                <p class="main-text _second">Curso concluído de HTML / CSS no site Curso em Video. Conhecimentos em responsividade, animações, psicologia das cores, tipográfia, pseudo-classes, pseudo-elementos e etc.</p>
-            </article>
+            {% for k in KnowledgesModel %}
+                <article class="knowledge-items">
+                    <h3 class="third-title _knowledge">{{ k.title }}</h3>
+                    <p class="main-text _second">{{ k.desc }}</p>
+                </article>
+            {% endfor %}
 
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">Marketing Digital</h3>
-                <p class="main-text _second">Fiz um curso de Introdução ao marketing Digital no site do Google Atêlie,
-                    na intenção de ter uma certa base sobre SEOs e outro tipos de ferramentas que há na web atualmente.
-                </p>
-            </article>
-
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">Algoritmos</h3>
-                <p class="main-text _second">Curso concluído em Algoritmos no site curso em video.</p>
-            </article>
             
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">Python</h3>
-                <p class="main-text _second">Conhecimento intermediário na linguagem Python, usado em criações de pequenos projetos. Conhecimentos em bibliotecas básicas como time, os, system, SQLite3 e Tkinter. Também conhecimento em Programação Orientada a Objeto (POO).
-                </p>
-            </article>
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">MySQL</h3>
-                <p class="main-text _second">Fiz um curso introdutório no site Curso em Video. Conhecimentos básicos em criação de databases, tabelas, colunas e consultas. Conhecimento usado em pequenos projetos.
-                </p>
-            </article>
-
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">Selenium</h3>
-                <p class="main-text _second">Conhecimento básico em Selenium com python. Conhecimento tal, usado em pequenos projetos de "raspagem de dados" conhecido como web scraping.</p>
-            </article>
-
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">JavaScript/ ES5 / Node</h3>
-                <p class="main-text _second">Fiz um curso de JavaScript no site Curso em Video. Onde adquiri conhecimentos sobre ECMAScript5, Node etc.
-                    Também conhecimento em Programação Orientada a Objeto (POO). 
-                </p>
-            </article>
-
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">VUE.JS</h3>
-                <p class="main-text _second">Conhecimento intermediário em VUE.JS, framework de JavaScript. Conhecimento em VUE Router e Vuex.</p>
-            </article>
-
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">BootsTrap / SASS</h3>
-                <p class="main-text _second">Conhecimento intermediário em BootsTrap e no pré-processador de css SASS. </p>
-            </article>
-
-            <article class="knowledge-items">
-                <h3 class="third-title _knowledge">Excel</h3>
-                <p class="main-text _second">Fiz um Curso de Introdução em Excel no site Curso em Video, obtive noções basicas de funções etc.
-                </p>
-            </article>
             <article class="knowledge-items">
                 <h3 class="third-title _knowledge">Idiomas</h3>
                 <ul class="main-text _second">
