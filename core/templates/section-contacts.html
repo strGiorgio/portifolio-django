@@ -1,0 +1,24 @@
+{% load static %}
+<!--Section contacts-->
+<section id="contact" class="main-section _contacts">
+    <div class="wrapper-contacts">
+        <h2 class="second-title" lang="en">CONTATOS</h2>
+        <form class="main-form" action="" >
+            <fieldset>
+                <div class="form-items">
+                    <label class="main-label" for="name">Nome:</label>
+                    <input class="main-input" id="name" type="text" required minlength="2" maxlength="30">
+                </div>
+                <div class="form-items">
+                    <label class="main-label" for="email">Email:</label>
+                    <input class="main-input" id="email" type="email" required minlength="2" maxlength="38">
+                </div>
+            </fieldset>
+            <fieldset class="form-items">
+                <label class="main-label" for="textarea">Mensagem:</label>
+                <textarea class="main-input _msg" id="textarea" required minlength="2" maxlength="500"></textarea>   
+            </fieldset>
+            <button class="main-button" type="submit">ENVIAR</button>
+        </form>
+    </div>
+</section>
