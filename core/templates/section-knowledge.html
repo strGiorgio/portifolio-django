@@ -1,0 +1,35 @@
+{% load static %}
+<!--Section knowledge-->
+<section id="knowledge" class="main-section _knowledge">
+    <h2 class="second-title _knowledge-title" lang="en">CONHECIMENTO</h2>
+    <div class="wrapper-knowledge">
+        {% for k in KnowledgesModel %}
+            <article class="knowledge-items">
+                <h3 class="third-title _knowledge">{{ k.title }}</h3>
+                <p class="main-text _second">{{ k.desc }}</p>
+            </article>
+        {% endfor %}
+
+        
+        <article class="knowledge-items">
+            <h3 class="third-title _knowledge">Idiomas</h3>
+            <ul class="main-text _second">
+                {% for l in IdiomsModel %}
+                    <li class="main-text _second">{{ l.lang }} - {{ l.level }}</li>
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+
+    <h2 class="second-title _skills">HABILIDADES</h2>
+    <div class="wrapper-skills">
+        {% for s in SkillsModel %}
+            <article class="skills-items">
+                <label class="third-title">{{ s.skill }}</label> 
+                <progress class="main-progress html" max="100" value="{{ s.percentage }}">{{ s.percentage }}</progress>
+            </article>
+        {% endfor %}
+        
+        <!--CASO ADICIONE OUTRA HABILIDADE MUDAR VALOR NO SCRIPT-->
+    </div>  
+</section>
