@@ -1,0 +1,56 @@
+{% load static %}
+<section class="sociais-toggle">
+    <div class="wrapper-sociais">
+        <a href="https://twitter.com/UselessAle" target="_blank" rel="external">
+            <img class="main-icons" src="{% static 'img/icons/twitter.png' %}" alt="Logo com link para Twitter">
+        </a>
+
+        <a href="https://github.com/strGiorgio" target="_blank" rel="external">
+            <img class="main-icons" src="{% static 'img/icons/github.png' %}" alt="logo com link para github">
+        </a>
+
+        <a href="">
+            <img class="main-icons" src="{% static 'img/icons/youtube.png' %}" alt="logo com link para youtube">
+        </a>
+
+        <a href="https://www.instagram.com/aleeefe/" target="_blank" rel="external">
+            <img class="main-icons" src="{% static 'img/icons/instagram.png' %}" alt="logo com link para instagram">
+        </a>
+
+        <a href="https://discord.gg/66wzSfrY" target="_blank" rel="external">
+            <img class="main-icons" src="{% static 'img/icons/discord.png' %}" alt="logo com link para discord">
+        </a>
+
+    </div>
+    <span class="second-arrow" onclick="menuClose()"></span>
+</section>
+
+<footer class="main-footer">
+    <div class="sociais-scroll">
+        <div class="wrapper-sociais">
+            <a href="https://twitter.com/UselessAle" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/twitter.png' %}" alt="Logo com link para Twitter">
+            </a>
+
+            <a href="https://github.com/strGiorgio" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/github.png' %}" alt="logo com link para github">
+            </a>
+
+            <a href="">
+                <img class="main-icons" src="{% static 'img/icons/youtube.png' %}" alt="logo com link para youtube">
+            </a>
+
+            <a href="https://www.instagram.com/aleeefe/" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/instagram.png' %}" alt="logo com link para instagram">
+            </a>
+
+            <a href="https://discord.gg/66wzSfrY" target="_blank" rel="external">
+                <img class="main-icons" src="{% static 'img/icons/discord.png' %}" alt="logo com link para discord">
+            </a>
+        </div>
+    </div>
+
+    <div class="sociais-alt" onclick="menuOpen()">Sociais</div>    
+
+    <p class="main-text _third">strGiorgio &copy; {% now 'Y' %}</p>
+</footer>
