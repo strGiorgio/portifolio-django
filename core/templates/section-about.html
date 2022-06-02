@@ -1,0 +1,11 @@
+{% load static %}
+<!--Section About-->
+<section id="about" class="main-section _about">
+    <h2 class="second-title _about-title" lang="en">SOBRE</h2>
+    <div class="wrapper-text">
+        <p class="main-text _first" lang="en">Ei,<br>Eu sou StrGiorgio,<br>FullStack Developer,</p>
+        {% for t in AboutMeModel %}
+            <p class="main-text _about-text">{{ t.desc}}</p>
+        {% endfor %}
+    </div>
+</section>  
