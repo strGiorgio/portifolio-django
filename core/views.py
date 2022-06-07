@@ -13,7 +13,7 @@ class IndexView(TemplateView):
         context = super(IndexView, self).get_context_data(**kwargs)
         context['title'] = 'strGiorgio'
         context['AboutMeModel'] = AboutMeModel.objects.all()
-        context['IdiomsModel'] = IdiomsModel.objects.all()
-        context['SkillsModel'] = SkillsModel.objects.all()
-        context['KnowledgesModel'] = KnowledgesModel.objects.all()
+        context['IdiomsModel'] = IdiomsModel.objects.order_by('?').all()
+        context['SkillsModel'] = SkillsModel.objects.order_by('?').all()
+        context['KnowledgesModel'] = KnowledgesModel.objects.order_by('?').all()
         return context
