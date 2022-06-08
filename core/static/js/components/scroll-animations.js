@@ -11,9 +11,14 @@ const skillsItems = document.querySelectorAll('.skills-items')
 const sectionProjects = document.querySelector('.main-section._projects')
 const loading = document.querySelector('.loading-element')
 
-sectionProjects.style.display = 'none'
+sectionProjects.style.display = 'none';
+
+//Get quantitys
+const qk = Number(document.querySelector('#quantity-knowledge').textContent)
+const qs = Number(document.querySelector('#quantity-skill').textContent)
 
 //FUNCTIONS
+
 window.addEventListener('scroll', () => {
     console.log(scrollY)
 
@@ -27,22 +32,22 @@ window.addEventListener('scroll', () => {
             knowledgeTitle.classList.add('animation-on')
         }
         if (scrollY > 1400){
-            for (var i = 0; i < 11; i++){
+            for (var i = 0; i < qk; i++){
                 knowledgeItems[i].classList.add('animation-opacity')
             }
         }
-        if (scrollY > 2000){
+        if (scrollY > 1700){
             skillsTitle.classList.add('animation-on')
         }
-        if (scrollY > 2300){
-            for (var i = 0; i < 8; i++) {
+        if (scrollY > 1800){
+            for (var i = 0; i < qs; i++) {
                 skillsItems[i].classList.add('animation-opacity')
             }
         }
-        if (scrollY > 2300) {
+        if (scrollY > 2000) {
             setTimeout(() => {
-                loading.style.display = 'none'
-                sectionProjects.style.display = 'flex'
+                loading.style.display = 'none';
+                sectionProjects.style.display = 'flex';
             }, 3000)
         }
 
