@@ -1,4 +1,5 @@
-from email import charset
+from email import charset, message
+import email
 from pyexpat import model
 from django.db import models
 
@@ -55,3 +56,12 @@ class SkillsModel(Base):
 
     def __str__(self):
         return f'{self.skill}'
+
+
+class UsersMessages(Base):
+    name = models.CharField('Name', max_length=128)
+    email = models.EmailField('Email', max_length=128)
+    message = models.CharField('Message', max_length=780)
+
+    def __str__(self):
+        return f'Message from: {self.name}'
