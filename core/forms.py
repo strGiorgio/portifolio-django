@@ -1,7 +1,11 @@
-from unicodedata import name
+from pyexpat import model
 from django  import forms
 
-class ContactForm(forms.Form):
-    name = forms.CharField(label='Name', max_length=64)
-    email = forms.EmailField(label='Email', max_length=128)
-    message = forms.CharField(label='Message', widget=forms.Textarea())
+from .models import UsersMessages
+
+
+class UsersMessagesForm(forms.ModelForm):
+    class Meta:
+        model = UsersMessages
+        fields = ['name', 'email', 'message']
+
