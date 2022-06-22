@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 from django.urls import reverse_lazy
 
 from .models import AboutMeModel, IdiomsModel, KnowledgesModel, SkillsModel
+from .forms import UsersMessagesForm
 
 # Create your views here.
 class IndexView(TemplateView):
@@ -23,4 +24,6 @@ class IndexView(TemplateView):
 
         context['KnowledgesModel'] = KnowledgesModel.objects.order_by('?').all()
         context['KnowledgesModelCount'] = KnowledgesModel.objects.count()
+
+        context['UsersMessagesForm'] = UsersMessagesForm
         return context
