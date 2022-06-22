@@ -7,5 +7,5 @@ from .models import UsersMessages
 class UsersMessagesForm(forms.ModelForm):
     class Meta:
         model = UsersMessages
-        fields = ['name', 'email', 'message']
+        fields = ['name', 'email', 'subject', 'message']
 
