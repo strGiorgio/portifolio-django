@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import AboutMeModel, KnowledgesModel, IdiomsModel, SkillsModel
+from .models import AboutMeModel, KnowledgesModel, IdiomsModel, SkillsModel, UsersMessages
 
 # Register your models here.
 @admin.register(AboutMeModel)
@@ -17,3 +17,7 @@ class SkillsModelAdmin(admin.ModelAdmin):
 @admin.register(KnowledgesModel)
 class KnowledgesModelAdmin(admin.ModelAdmin):
     list_display = ('title', 'created', 'modified', 'active')
+
+@admin.register(UsersMessages)
+class UsersMessagesAdmin(admin.ModelAdmin):
+    list_display = ('name', 'subject', 'email')
