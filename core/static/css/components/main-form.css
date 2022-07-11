@@ -5,11 +5,9 @@
     border-radius: 20px;
     box-shadow: 5px 5px 5px #000;
     
-    width: 48.8rem;
-    max-width: 488px;
-    height: 67.2rem;
-    max-height: 67.2rem;
-
     align-items: center;
     justify-content: center;
+
+    padding: 30px;
+
 }
