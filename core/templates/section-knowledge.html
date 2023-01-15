@@ -4,7 +4,7 @@
 <span id="quantity-skill" style="display: none;">{{ SkillsModelCount }}</span>
 
 <section id="knowledge" class="main-section _knowledge">
-    <h2 class="second-title _knowledge-title" lang="en">CONHECIMENTO</h2>
+    <h2 class="second-title _knowledge-title">CONHECIMENTO</h2>
     <div class="wrapper-knowledge">
         {% for k in KnowledgesModel %}
             <article class="knowledge-items">
@@ -14,7 +14,7 @@
         {% endfor %}
 
         
-        <article class="knowledge-items">
+        <article>
             <h3 class="third-title _knowledge">Idiomas</h3>
             <ul class="main-text _second">
                 {% for l in IdiomsModel %}
@@ -23,6 +23,7 @@
             </ul>
         </article>
     </div>
+
 
     <h2 class="second-title _skills">HABILIDADES</h2>
     <div class="wrapper-skills">
